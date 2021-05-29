@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> website</title>
+</head>
+<body>
+    <style type="text/css">
+    .{
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        text-align: center;
+    }
+    .card{
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 300px;
+        height: 300px;
+        text-align: center;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px rgb(12, 9, 9);
+        transform: 0.3s;
+       font-size: 0;
+    }
+    .card:hover{
+        box-shadow: 0 16px 32px rgb(12, 9, 9) ;
+    }
+    .calc-head #result{
+        width: 300px;
+        height: 100px;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: right;
+        padding: 0 5px;
+        letter-spacing: 2px;
+    }
+    .btn{
+        width: 40px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #1f2326;
+        color: white;
+    }
+    .btn-style{
+        background-color: #5f4886;
+    }
+    .btn:hover{
+        background-color: pink;
+    }
+
+    </style>
+
+    <h1>Calcultor</h1>
+    <div class="card">
+        <div class="calc-head">
+            <input type="text" id="result" maxlength="10">
+
+        </div>
+        <div class="calc- body">
+           <div>
+
+            <input type="button" class="btn" value="c">
+            <input type="button" class="btn" value="+/-">
+            <input type="button" class="btn" value="%">
+            <input type="button" class="btn btn-style" value="/">
+
+           </div>
+           <div>
+            <input type="button" class="btn" value="7" onclick="insertNumber('7')">
+            <input type="button" class="btn" value="8"  onclick="insertNumber(8)">
+            <input type="button" class="btn" value="9"  onclick="insertNumber(9)">
+            <input type="button" class="btn btn-style" value="x">
+
+
+           </div>
+           <div>
+            <input type="button" class="btn" value="4"  onclick="insertNumber(4)">
+            <input type="button" class="btn" value="5"  onclick="insertNumber(5)">
+            <input type="button" class="btn" value="6"  onclick="insertNumber(6)">
+            <input type="button" class="btn btn-style" value="-">
+
+           </div>
+           <div>
+            <input type="button" class="btn" value="1"  onclick="insertNumber(1)">
+            <input type="button" class="btn" value="2"  onclick="insertNumber(2)">
+            <input type="button" class="btn" value="3"  onclick="insertNumber(3)">
+            <input type="button" class="btn btn-style" value="+">
+           </div>
+
+           <div>
+            <input type="button" class="btn" value="0"  onclick="insertNumber(0)">
+            <input type="button" class="btn" value="."  onclick="insertNumber(.)">
+            <input type="button" class="btn" value="Del">
+            <input type="button" class="btn" style="background-color: orange;" value="=">
+           </div>
+
+
+        </div>
+
+    </div>
+
+
+
+   
+          
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+  
+
+    
+</html>
+
+   
+    
+
+
+
+
+
+    
+
+
+
+
+   
